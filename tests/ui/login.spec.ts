@@ -34,4 +34,9 @@ test.describe('Login', () => {
     await loginPage.login('standard_user', '');
     await loginPage.expectError('Password is required');
   });
+
+  test('TC-LOGIN-06: inventory page is blocked without logging in', async ({ page }) => {
+    await page.goto('/inventory.html');
+    await loginPage.expectError("You can only access '/inventory.html'");
+  });
 });

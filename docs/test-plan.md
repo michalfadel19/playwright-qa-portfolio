@@ -24,6 +24,7 @@ Out of scope: performance, load, security, and cross-browser testing.
 | TC-LOGIN-03 | UI | Log in with a wrong password | Credentials error shown |
 | TC-LOGIN-04 | UI | Submit with empty username | "Username is required" |
 | TC-LOGIN-05 | UI | Submit with empty password | "Password is required" |
+| TC-LOGIN-06 | UI | Open the inventory page without logging in (negative) | Redirected to login with an access error |
 | TC-CART-01 | UI | Add one item | Cart badge shows 1 |
 | TC-CART-02 | UI | Add two items | Badge shows 2, cart lists both |
 | TC-CART-03 | UI | Remove an item | Cart badge disappears |
